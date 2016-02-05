@@ -69,71 +69,140 @@
 
                 
                 <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h5 id="module-4">Module 4</h5>
-<p><a href="../../class2-prep#structs">Back to Class 2 Prep</a></p>
-<h1 id="exercise-game">Exercise: Game</h1>
-<p>In <a href="./game.html">game.c</a>, we have written a program that allows the user to play a &quot;role playing&quot; game in the terminal.</p>
-<p>The game behaves like this (it's a little long):</p>
-<pre><code class="language-nohighlight">$ ./game
-* * * DUNGEON QUEST * * *
+                    <pre><code class="language-c">/**
+ * game.c
+ *
+ */
 
-You find yourself in a dungeon ruled by dark magic
-Try to escape and reach The Altar of Yezzeron without dying!
-But before you arrive, you must boost your Zorph Wisdom to at least level 3,
-...or else the Dieties of The Altar of Yezzeron will not accept you!
+#include &lt;cs50.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;time.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
 
-Current Status: 
-You are 3 miles away from The Altar of Yezzeron
-Your health is at 100 percent
-Your Zorph Wisdom is at level 1
+#define DESTINATION "The Altar of Yezzeron"
+#define SKILL "Zorph Wisdom"
+#define SKILL_GOAL 3
 
-You continue walking through dark corridors...
+// TODO
+// define a struct type called player
 
-You health is slowly waning...
+bool checkGameOver(player p);
+void reportStatus(player p);
+void discoverPotion(player* p);
 
-Suddenly you discover a potion on the ground!
-Do you want to drink it? (y/n)
-y
-A devilish sickness comes over you...
+int main(void) 
+{
+    // intro text
+    printf("* * * DUNGEON QUEST * * *\n\n");
+    printf("You find yourself in a dungeon ruled by dark magic\n");
+    printf("Try to escape and reach %s without dying!\n", DESTINATION);
+    printf("But before you arrive, you must boost your %s to at least level %i,\n", SKILL, SKILL_GOAL);
+    printf("...or else the Dieties of %s will not accept you!\n\n", DESTINATION);
 
-Current Status: 
-You are 2 miles away from The Altar of Yezzeron
-Your health is at 55 percent
-Your Zorph Wisdom is at level 1
+    // provide a seed to the random number generator (don't worry about understanding this)
+    srand(time(NULL));
 
-You continue walking through dark corridors...
+    // initialize the player
+    player p = { 100, 3, 1 };
 
-You health is slowly waning...
+    // continue looping forever until Game Over
+    while (true)
+    {
+        if (checkGameOver(p))
+        {
+            // stop if we hit Game Over
+            return 0;
+        }
 
-Suddenly you discover a potion on the ground!
-Do you want to drink it? (y/n)
-y
-You feel your powers growing!
+        reportStatus(p);
 
-Current Status: 
-You are 1 miles away from The Altar of Yezzeron
-Your health is at 45 percent
-Your Zorph Wisdom is at level 2
+        printf("You continue walking through dark corridors...\n");
+        p.distance -= 1;
+        GetString();
 
-You continue walking through dark corridors...
+        printf("You health is slowly waning...\n");
+        p.health -= 10;
+        GetString();
 
-You health is slowly waning...
+        discoverPotion(&amp;p);
+    }
+}
 
-Suddenly you discover a potion on the ground!
-Do you want to drink it? (y/n)
-y
-You feel your powers growing!
+/** 
+ * Returns true if the player has run out of health or reached the destination, else false
+ * If the game did end, also prints an appropriate message, depending on the outcome
+ */
+bool checkGameOver(player p)
+{
+    if (p.health &lt;= 0)
+    {
+        printf("Your last vestiges of health have deteriorated. You waste away in the loneliness of the Dungeon!\n");
+        printf("Game Over\n");
+        return true;
+    }
+    else if (p.distance &lt;= 0)
+    {
+        if (p.skill &gt;= SKILL_GOAL)
+        {
+            printf("You reach %s! The Dieties welcome you to their ethereal realm, and you join them in immortality!\n", DESTINATION);
+        }
+        else 
+        {
+            printf("You reach %s, but your %s is not developed enough.\n", DESTINATION, SKILL);
+            printf("The Dieties condemn you, mortal, to another twenty years in the Dungeon!\n");
+            printf("Game Over\n");
+        }
+        return true;
+    }
 
-You reach The Altar of Yezzeron! The Dieties welcome you to their ethereal realm, and you join them in immortality!</code></pre>
-<p>If you take a look at the source code, this is a great example of a situation in which <code>struct</code>s are useful. Throughout the code, we make constant use of a <code>player</code> struct, which is a data model representing the character trekking through the dungeon. The structure keeps track of 3 things:</p>
-<ol>
-<li>current level of health (between 0 and 100)</li>
-<li>current distance from the destination (aka The Altar of Yezzenon)</li>
-<li>current skill level (aka Zorph Wisdom)</li>
-</ol>
-<p>Together, these 3 aspects comprise everything we need to represent the situation of the player. And any context in which we care about one of these values is likely to be a context in which we care about the other 2 as well. So it makes sense to package them all together into a single datatype. Without using a <code>struct</code> here, we would have to have 3 loose variables floating around, and our functions would have to accept 3 arguments as inputs instead of just 1.</p>
-<h3 id="your-assignment">Your Assignment</h3>
-<p>There is one thing missing in the code: we never actually defined the <code>player</code> struct. That's your job! See if you can implement the definition so that the game compiles and runs. We have left a <code>//TODO</code> where you can place your code.</p>
+    return false;
+}
+
+/**
+ * Prints a status report to the console, informing the user of how they are doing 
+ */
+void reportStatus(player p)
+{
+    printf("Current Status: \n");
+    printf("You are %i miles away from %s\n", p.distance, DESTINATION);
+    printf("Your health is at %i percent\n", p.health);
+    printf("Your %s is at level %i\n\n", SKILL, p.skill);
+    GetString();
+}
+
+/**
+ * Allows user the option to drink a magic potion
+ * If so, randomly decides whether the potion had a "good" effect or "bad", and updates the player model accordingly
+ */
+void discoverPotion(player* p)
+{
+    printf("Suddenly you discover a potion on the ground!\n");
+    printf("Do you want to drink it? (y/n)\n");
+
+    // do drink if user types "y", otherwise don't drink
+    bool userDecidesToDrink = strcmp(GetString(), "y") == 0;
+    if (userDecidesToDrink)
+    {
+        // flip a coin to determine if the potion was helpful or harmful
+        int r = rand();
+        if (r % 2 == 0)
+        {
+            // good potion. increase skill
+            p-&gt;skill++;
+            printf("You feel your powers growing!\n");
+            GetString();
+        }
+        else 
+        {
+            // evil potion. decrease health
+            p-&gt;health -= 35;
+            printf("A devilish sickness comes over you...\n");
+            GetString();
+        }
+    }
+}
+</code></pre>
                 </section>
 
             </div>

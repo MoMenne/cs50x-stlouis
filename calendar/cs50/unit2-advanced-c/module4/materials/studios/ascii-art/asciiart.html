@@ -69,71 +69,80 @@
 
                 
                 <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h5 id="module-4">Module 4</h5>
-<p><a href="../../class2-prep#structs">Back to Class 2 Prep</a></p>
-<h1 id="exercise-game">Exercise: Game</h1>
-<p>In <a href="./game.html">game.c</a>, we have written a program that allows the user to play a &quot;role playing&quot; game in the terminal.</p>
-<p>The game behaves like this (it's a little long):</p>
-<pre><code class="language-nohighlight">$ ./game
-* * * DUNGEON QUEST * * *
+                    <pre><code class="language-c">/** 
+ * asciiart.c
+ *
+ */
 
-You find yourself in a dungeon ruled by dark magic
-Try to escape and reach The Altar of Yezzeron without dying!
-But before you arrive, you must boost your Zorph Wisdom to at least level 3,
-...or else the Dieties of The Altar of Yezzeron will not accept you!
+#include &lt;cs50.h&gt;
+#include &lt;string.h&gt;
+#include &lt;stdio.h&gt;
 
-Current Status: 
-You are 3 miles away from The Altar of Yezzeron
-Your health is at 100 percent
-Your Zorph Wisdom is at level 1
+typedef struct {
+    int* hashLocations;
+    int length;
+} csvLine;
 
-You continue walking through dark corridors...
+csvLine extractNumbers(char* line);
 
-You health is slowly waning...
+int main(void)
+{
+    //You need to do the following:
 
-Suddenly you discover a potion on the ground!
-Do you want to drink it? (y/n)
-y
-A devilish sickness comes over you...
+    //Prompt the user for an input file
 
-Current Status: 
-You are 2 miles away from The Altar of Yezzeron
-Your health is at 55 percent
-Your Zorph Wisdom is at level 1
+    //Prompt the user for an output file
 
-You continue walking through dark corridors...
+    //Open the file to read from
 
-You health is slowly waning...
+    //Open the file you're writing to
 
-Suddenly you discover a potion on the ground!
-Do you want to drink it? (y/n)
-y
-You feel your powers growing!
+    //For each line being read in from the input file:
 
-Current Status: 
-You are 1 miles away from The Altar of Yezzeron
-Your health is at 45 percent
-Your Zorph Wisdom is at level 2
+        //Pass the line into the given extractNumbers function
 
-You continue walking through dark corridors...
+        //Create a string that contains 1000 spaces using the following line of code
+        char lineOut[1000] = {' '};
 
-You health is slowly waning...
+        //For each value in the int array returned by extractNumbers:
 
-Suddenly you discover a potion on the ground!
-Do you want to drink it? (y/n)
-y
-You feel your powers growing!
+            //set that position in lineOut to be a '#'
 
-You reach The Altar of Yezzeron! The Dieties welcome you to their ethereal realm, and you join them in immortality!</code></pre>
-<p>If you take a look at the source code, this is a great example of a situation in which <code>struct</code>s are useful. Throughout the code, we make constant use of a <code>player</code> struct, which is a data model representing the character trekking through the dungeon. The structure keeps track of 3 things:</p>
-<ol>
-<li>current level of health (between 0 and 100)</li>
-<li>current distance from the destination (aka The Altar of Yezzenon)</li>
-<li>current skill level (aka Zorph Wisdom)</li>
-</ol>
-<p>Together, these 3 aspects comprise everything we need to represent the situation of the player. And any context in which we care about one of these values is likely to be a context in which we care about the other 2 as well. So it makes sense to package them all together into a single datatype. Without using a <code>struct</code> here, we would have to have 3 loose variables floating around, and our functions would have to accept 3 arguments as inputs instead of just 1.</p>
-<h3 id="your-assignment">Your Assignment</h3>
-<p>There is one thing missing in the code: we never actually defined the <code>player</code> struct. That's your job! See if you can implement the definition so that the game compiles and runs. We have left a <code>//TODO</code> where you can place your code.</p>
+        //Print all of lineOut to the output file
+
+    //Close both files
+
+    //Insert the name of the output file in the print statement below
+    printf("Done! If you open up &lt;output file name&gt; you should now see a cool image!\n");
+}
+
+csvLine extractNumbers(char* line)
+{
+    int count = 0;
+    for(int i = 0; i &lt; strlen(line); i++)
+    {
+        if(line[i] == ',')
+        {
+            count++;
+        }
+    }
+
+    char* token;
+    int* hV = malloc(sizeof(int) * (count+1));
+    int i = 0;
+    token = strtok(line, ",");
+    hV[i] = atoi(token);
+    i++;
+    while ((token = strtok(NULL, ",")) != NULL)
+    {
+        hV[i] = atoi(token);
+        i++;
+    }
+    struct csvLine result;
+    result.hashLocations = hV;
+    result.length = count + 1;
+    return result;
+}</code></pre>
                 </section>
 
             </div>
