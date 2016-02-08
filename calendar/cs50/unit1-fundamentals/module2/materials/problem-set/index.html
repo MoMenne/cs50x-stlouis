@@ -124,7 +124,7 @@ argv[1][0] == '1'
 argv[1][1] == '3'</code></pre>
 <h5 id="caesar">Caesar:</h5>
 <p>The key here (pun intended :wink:) is the need to understand the relationship between a char, its integer value, and a position in the alphabet.</p>
-<p>For example, the char 'A' has an ASCII (integer) value of 65, but its position in the alphabet would be 0 (in computer terms). 'B' is 65 ASCII and 1 alphabet, and so on.</p>
+<p>For example, the char 'A' has an ASCII (integer) value of 65, but its position in the alphabet would be 0 (in computer terms). 'B' is 66 ASCII and 1 alphabet, and so on.</p>
 <p>Initially, it seems easy to convert the number from the command line to its pair, even just using &quot;ASCII math&quot;: enter 1 and 'A', convert using 'A' + 1 = 'B'. Easy, right?</p>
 <p>But, what happens when you get further into the alphabet - or get a really large number as your key? 'Z' + 1 does NOT equal 'A' in ASCII. Rather you’ve gone past the end. In order to make that rotation, you need a conversion AND &quot;trust in the mod!&quot;</p>
 <p>0 % 26 = 0, 1 % 26 = 1, … 26 % 26 = 0, 27 % 26 = 1, …</p>
