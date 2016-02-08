@@ -50,7 +50,7 @@ clean:
 ```
 Here, the target `clean`  allows you to delete all files ending in .o or called core (more on that soon!), or `expt`. Be careful not to add, say, `*.c` to that last line in Makefile! (Why?) Any line, incidentally, that begins with # is just a comment.
 
-Now that we've covered the [Makefile](makefile.html), let's move on to Part 2. (If you're still confused about Makefiles you can check <a href="https://en.wikipedia.org/wiki/Makefile" target="_blank">here</a> for more information.
+Now that we've covered the [Makefile](makefile.html), let's move on to Part 2. (If you're still confused about Makefiles you can check <a href="https://en.wikipedia.org/wiki/Makefile" target="_blank">here</a> for more information.)
 
 ### Part 2
 Your next task should be to create those missing files. Let's start with `mult.h`. This is the header file for the multiplication function, and should include the function *prototype*. A prototype defines what a function uses for its inputs and outputs, but does _not_ define what the function does. It is used to tell other parts of your program what kinds of functions are available for use.
@@ -71,7 +71,7 @@ As always, it is important to test your code. It may be a good idea to write a s
 ### Part 4
 Once you are satisfied with your multiplication function, it is time to turn our attention to exponentiation. Exponentiation can be thought of as repeated multiplication, much like multiplication can be thought of as repeated addition. Like with the `mult` function, however, you are faced with some restrictions. The multiplication operator is still not allowed. Instead you should use the recursive `mult` function that you wrote. In order to do this, we need to tell the exponentiation function what the multiplication function looks like. We can do this by referring to the header file that we created.
 
-Header files are referenced with the `#include` statement. So to include our header file in `expt.c`, we would type `#include "mult.c"`. Go ahead and add this to the `expt.c` file now.
+Header files are referenced with the `#include` statement. So to include our header file in `expt.c`, we would type `#include "mult.h"`. Go ahead and add this to the `expt.c` file now.
 
 You are now ready to use your multiplication function to compute exponents. Your solution should be recursive, so loops are still not allowed. Make sure to use your `mult` function to perform multiplication! Anywhere that you would normally use `*` should be replaced with a function call to `mult`.
 
