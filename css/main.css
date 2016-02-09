@@ -126,6 +126,15 @@ header.navbar {
 .page-header {
     margin-top: 0;
 }
+.language-nohighlight {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #444;
+    -webkit-text-size-adjust: none;
+    color: white;
+    
+}
 
 #sidebar .text-muted {
     color: #bbbbbb;
