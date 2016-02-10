@@ -69,27 +69,78 @@
 
                 
                 <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h5><a href="../..">Helpful Resources</a></h5>
-<h1 id="fixing-the-debugger">Fixing the Debugger</h1>
-<p>Please take a moment here to read a few things about the CS50 IDE Debugger. We will talk about:</p>
+                    <h5 id="module-4">Module 4</h5>
+<p><a href="../../class1">Back to Class 1</a></p>
+<h1 id="studio-word-grid-stretch">Studio: Word Grid Stretch</h1>
+<p>The word grid is back with a vengence!</p>
+<p>Just like last week, this studio involves taking some strings from the user, and then printing them back out in a transformed way.</p>
+<p>Today, your program will apply a &quot;stretch&quot; factor to the grid of letters, making it larger. </p>
+<p>It is easiest to explain via example. The finished program should behave like this:</p>
+<pre><code class="language-nohighlight">$ ./wordgridstretch goat crab bear
+Your word grid currently looks like this:
+goat
+crab
+bear
+Now I will stretch it out. How much should I stretch by?
+3
+After stretching by 3, you now have this!
+gggoooaaattt
+gggoooaaattt
+gggoooaaattt
+cccrrraaabbb
+cccrrraaabbb
+cccrrraaabbb
+bbbeeeaaarrr
+bbbeeeaaarrr
+bbbeeeaaarrr</code></pre>
+<p>That's what we mean by &quot;making the grid larger&quot;. </p>
+<h3 id="break-it-down">Break it Down</h3>
+<p>To get started, we suggest you try two simpler versions first:</p>
 <ol>
-<li>How to fix it </li>
-<li>The fact that it is awesome</li>
-<li>How to pass in command-line arguments on the Debugger.</li>
+<li>
+<p>A program that just stretches the grid vertically:</p>
+<pre><code class="language-nohighlight">$ ./stretchvertical goat crab bear
+Your word grid currently looks like this:
+goat
+crab
+bear
+Now I will stretch it out vertically. How much should I stretch by?
+3
+After stretching by 3, you now have this!
+goat
+goat
+goat
+crab
+crab
+crab
+bear
+bear
+bear</code></pre>
+</li>
+<li>A program that just stretches the grid horizontally:
+<pre><code class="language-nohighlight">$ ./stretchhorizontal goat crab bear
+Your word grid currently looks like this:
+goat
+crab
+bear
+Now I will stretch it out horizontally. How much should I stretch by?
+3
+After stretching by 3, you now have this!
+gggoooaaattt
+cccrrraaabbb
+bbbeeeaaarrr</code></pre></li>
 </ol>
-<h3 id="1-fix-it">1. Fix it</h3>
-<p>You may have discovered that the built-in Debugger on the CS50 IDE is a little, well, buggy.</p>
-<p>LaunchCode mentor Ricky has put together a <a href="https://github.com/dummey/CS50x-Debugger-Help" target="_blank">great guide</a> to how to fix the issues so you can go back to debugging your code. </p>
-<h3 id="2-its-awesome">2. It's Awesome</h3>
-<p>We can't overemphasize how awesome the Debugger is. If you haven't been using it thus far, we highly reccomend you give it another chance. </p>
+<p>Only after writing these little bad boys should you start to think about how to combine both steps into one bigger badder boy.</p>
+<h3 id="validation">Validation</h3>
+<p>Don't forget to validate the user's input. Specifically, you'll want to ensure:</p>
 <ul>
-<li>If you were having trouble running it, Ricky's guide above should take 2 minutes to fix the problem. </li>
-<li>If you are still confused about what the Debugger does and how to use it, check out <a href="https://www.youtube.com/watch?v=-G_klBQLgdc" target="_blank">this video</a> again.</li>
+<li>that the user gave you exactly 3 words as command-line arguments</li>
+<li>that those words are all the same length</li>
+<li>that the user provides a non-negative stretch factor </li>
 </ul>
-<p>We know you have a lot of work on your plate, so the thought of spending additional time to learn yet another thing is daunting. We promise it is worth the small extra time investment to learn how to use this thing. Just an extra few minutes, and then you will have at your disposal a tool which makes it 1000 times easier to understand what your code is doing.</p>
-<h3 id="3-command-line-arguments">3. Command-line arguments</h3>
-<p>It is not immediately obvious how to use the Debugger for programs that accept command-line arguments. Where do you pass in the arguments?</p>
-<p>See this <a href="https://piazza.com/class/ii659v08kpv73u?cid=149" target="_blank">Pizza post</a> for the answer.</p>
+<h3 id="submitting">Submitting</h3>
+<p>You don't have to submit <code>stretchvertical.c</code> and <code>stretchhorizontal.c</code>. You only have to submit <code>wordgridstretch.c</code>.</p>
+<p>*You can grab a copy of these instructions from Helpful Resources <a href="../../../../../../..//helpful-resources/modules/module-4.html#class-x-studio-word-grid-stretch" target="_blank">here</a>. They are formatted as comments so that you can put it at the top of your program in the CS50 IDE. Remember the compiler ignores any comments, so this won't affect your program! You can start writing your code right after the comments.</p>
                 </section>
 
             </div>
