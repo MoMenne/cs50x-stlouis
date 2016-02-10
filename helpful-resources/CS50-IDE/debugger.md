@@ -2,7 +2,7 @@
 
 # Fixing the Debugger
 
-Just a few miscellaneous notes on the Debugger:
+Please take a moment here to read a few things about the CS50 IDE Debugger. We will talk about:
 
 1. How to fix it 
 2. The fact that it is awesome
