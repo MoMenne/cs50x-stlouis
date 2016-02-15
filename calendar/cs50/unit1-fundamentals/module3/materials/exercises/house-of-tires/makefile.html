@@ -75,7 +75,7 @@
 <p>One very important thing you must do: notice how some of the lines are indented. These indentations <strong>must</strong> be tabs, not spaces. When you copy/paste, they will be spaces. So go into each indented line, delete the spaces, and then re-indent by pressing tab.</p>
 <pre><code class="language-nohighlight"># Makefile
 
-all: pizza tires
+all: houseofpizza houseoftires
 
 houseofpizza: houseofpizza.c mathhelper.c mathhelper.h
     clang -ggdb3 -O0 -std=c11 -Wall -Werror -o houseofpizza houseofpizza.c mathhelper.c -lcs50 -lm
