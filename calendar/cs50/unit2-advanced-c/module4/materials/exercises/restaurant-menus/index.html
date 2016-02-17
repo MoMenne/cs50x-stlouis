@@ -90,10 +90,20 @@ MENU:
 1) Turkey Club
 2) Grilled Chicken
 3) Philly Cheesesteak</code></pre>
-<p>The <code>[fgets]</code>(<a href="https://reference.cs50.net/stdio.h/fgets">https://reference.cs50.net/stdio.h/fgets</a>) function will be very helpful. You can use this function to read in each line of your file, one line at a time.</p>
-<p>Here's an example. If you have declared a <code>string</code> variable, called, say <code>line</code>, you can &quot;fill&quot; it with data by calling <code>fgets</code> like so:</p>
-<pre><code class="language-c">fgets(line, 150, yourfile);</code></pre>
-<p>The <code>150</code> specifies that you want to stop reading after 150 bytes. But the cool part about <code>fgets</code> is that <strong>if</strong> it encounters a new line <code>\n</code> character at any point, even some time before 150 bytes, it will immediately stop and return the data up until that point. This means you will receive exactly one line of text from the file!</p>
+<p>The <code>fgets</code>(<a href="https://reference.cs50.net/stdio.h/fgets">https://reference.cs50.net/stdio.h/fgets</a>) function (short for &quot;file get string&quot;) will be very helpful. You can use this function to read in each line of your file, one line at a time</p>
+<p>Here's an example. </p>
+<p>Suppose you have previously declared a <code>char*</code> variable, or an array of <code>char</code>s, </p>
+<p>like this:</p>
+<pre><code class="language-c">// allocate memory for a string of length 256
+char* line = malloc(sizeof(char) * 256);</code></pre>
+<p>or like this;</p>
+<pre><code class="language-c">// declare an array of 256 chars
+char line[256];</code></pre>
+<p>the <code>line</code> variable above starts off &quot;empty&quot;, but you can then &quot;fill&quot; <code>line</code> with data by calling <code>fgets</code>, like so:</p>
+<pre><code class="language-c">fgets(line, 256, yourfile);</code></pre>
+<p>This will read in 256 byes of data from <code>yourfile</code> and copy that data into the address pointed to by <code>line</code>. </p>
+<p>One nice feature of <code>fgets</code> is that <strong>if</strong> it encounters a new line <code>\n</code> character at any point, even some time before 256 bytes, it will immediately stop and return only the data up until that point. This means you are guaranteed to receive exactly one line of text from the file. </p>
+<p>(That is, unless you try to read a line of text that actually turns out to be longer than 256 bytes. But this almost certainly won't be true. Most text files have a max line-length of around 75 characters (1 byte each). This is why we (somewhat arbitrarily) chose 256-- because it is sufficiently greater than 75 so as to be a reasonable way of ensuring that we've got our bases covered, but not so much greater that we are wasting memory too excessively.)</p>
 <p>When you use <code>fgets</code> it will read content from the file until either the specified number of bytes, a newline, or the end of the file (EOF) is reached. You'll probably want to write code that checks to see if the end of the file has been reached or not. One example of how you might check for the end of the file is as follows:</p>
 <pre><code class="language-c">while(fgets(...) != NULL)
 {
