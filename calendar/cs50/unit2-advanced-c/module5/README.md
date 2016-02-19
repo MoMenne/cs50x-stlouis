@@ -13,6 +13,6 @@ In this module, you will learn how to combine `struct`s and `array`s in differen
 
 Class # | Date | Before Class | During Class | Topics/Skills
 :------:|:----:|:------------:|:------------:|-----------------------|
-Class 1 | TBD | [Prep Work](./materials/class1-prep) | [In Class](./materials/class1) | more on pointers and memory, linked lists |
-Class 2 | TBD | [Prep Work](./materials/class2-prep) | [In Class](./materials/class2) | hash tables, trees and tries, stacks and queues |
-Class 3 | TBD | Work on [Problem Set 5](./materials/problem-set) | [In Class](./materials/class3) | (office hours!) |
+Class 1 | Thu 3/3 | [Prep Work](./materials/class1-prep) | [In Class](./materials/class1) | more on pointers and memory, linked lists |
+Class 2 | Tue 3/8 | [Prep Work](./materials/class2-prep) | [In Class](./materials/class2) | hash tables, trees and tries, stacks and queues |
+Class 3 | Thu 3/10 | Work on [Problem Set 5](./materials/problem-set) | [In Class](./materials/class3) | (office hours!) |
