@@ -120,9 +120,10 @@ Please select an option:
     q - to quit
 a 
 What is the name of the new toy?
-Bonestorm Videogame
-Ok, Bonestorm Videogame has been added to the B's list:
-    - Bonestorm Videogame
+Slinky
+Ok, Slinky has been added to bin 18
+bin 18 contains:
+    - Slinky
 
 Please select an option:
     a - to add a new toy to the warehouse
@@ -130,23 +131,33 @@ Please select an option:
 a 
 What is the name of the new toy?
 Barbie
-Ok, Barbie has been added to the B's list:
+Ok, Barbie has been added to bin 1
+bin 1 contains:
     - Barbie
-    - Bonestorm Videogame
 
 Please select an option:
     a - to add a new toy to the warehouse
     q - to quit
-a
+a 
 What is the name of the new toy?
-Cup and Ball
-Ok, Cup and Ball has been added to the C's list:
-    - Cup and Ball
+Bonestorm Videogame
+Ok, Bonestorm Videogame has been added to bin 1
+bin 1 contains:
+    - Bonestorm Videogame
+    - Barbie
 
 Please select an option:
     a - to add a new toy to the warehouse
     q - to quit
 q
+Current contents of all bins:
+bin 1 contains:
+    - Bonestorm Videogame
+    - Barbie
+
+bin 18 contains:
+    - Slinky
+
 Goodbye, valued employee.</code></pre>
 <p>To do this, you’ll need to employ a Hash Table with Separate Chaining, as we saw <a href="http://cdn.cs50.net/2015/fall/lectures/5/w/notes5w/notes5w.html#hash_tables">here</a>.</p>
 <p>Your hash table will be implemented as a big array, where each item in the array is a sublist for a particular letter. So your array will have 26 slots, one for each letter</p>
@@ -155,16 +166,16 @@ Goodbye, valued employee.</code></pre>
 <li>the array, at index 1, will contain the sublist of all the toys that start with &quot;b&quot;, </li>
 <li>etc</li>
 </ul>
-<p>Each sublist is implemented as a linked list, where each node in the list contains the name of the toy and a pointer to the next toy. So we looked inside the big array at index 1, we might expect to find a pointer to node whose <code>toyName</code> field is <code>"Barbie"</code>, and whose <code>next</code> field is a pointer to another node. </p>
+<p>Each sublist is implemented as a linked list, where each node in the list contains the name of the toy and a pointer to the next toy. So we looked inside the big array at index 1, we might expect to find a pointer to node whose <code>name</code> field is <code>"Bonestorm Videogame"</code>, and whose <code>next</code> field is a pointer to the &quot;Barbie&quot; node. </p>
 <p>The full process for storing any new item, looks like this:</p>
 <ul>
 <li>ask for the name of the item</li>
 <li>create a struct to represent the new item</li>
-<li>use a hash function to find  correct location</li>
+<li>use a hash function to find correct location where this toy belongs</li>
 <li>add it to the correct sublist, the one at the above location</li>
 <li>print out the new inventory at that location</li>
 </ul>
-<p>We’ve provided starter code in <a href="toystorage.html">toystorage.c</a>, including a function for hashing based on the first letter of a toy’s name, as well as a basic struct for linked lists, and an initialization of an array for use as a hash table.  We’ve also provided the code to print out the contents of a key in the hash table.</p>
+<p>We’ve provided starter code in <a href="toystorage.html">toystorage.c</a>, including a function for hashing based on the first letter of a toy’s name, as well as a basic struct for linked lists, and an initialization of an array to use as a hash table.  We’ve also provided the code to print out the contents of a key in the hash table.</p>
                 </section>
 
             </div>
