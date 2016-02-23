@@ -9,7 +9,7 @@ Before coming to class please complete <a href="../class2-prep" target="_blank">
 ### During Class
 Recursion is a tricky, but important concept. Today we will go over the necessary pieces of recursion and step through many examples to get a feel for how recursion works.
 
-1. Lecture / Q&A (<a href="https://www.youtube.com/watch?v=jk7Iejfil90" target="_blank">Re-watch it here</a>!). Topics of Discussion:
+1. Lecture / Q&A (<a href="https://www.youtube.com/watch?v=jk7Iejfil90" target="_blank">Re-watch it here!</a>). Topics of Discussion:
   * What is recursion?
   * Identifying the recursive substructure of a problem
   * What are the important pieces of a recursive program?
