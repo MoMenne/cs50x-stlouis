@@ -13,7 +13,7 @@ For studio, you will do a problem that is very similar to part of Pset4. You do 
 
 **Today's Schedule:**
 
-1. Lecture / Q&A on the following topics
+1. Lecture / Q&A (<a href="https://www.youtube.com/watch?v=aJDPcx3aY3k" target="_blank">Rewatch it here!</a>) on the following topics:
   * pointers
   * malloc
 2. [Studio: Word Grid Stretch](../studios/word-grid-stretch)
