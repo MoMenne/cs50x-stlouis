@@ -22,6 +22,6 @@ Class # | Date | Before Class | During Class | Topics/Skills
 :------:|:----:|:------------:|:------------:|-----------------------|
 Class 1 | 2/23 | [Prep Work](./materials/class1-prep) | [In Class](./materials/class1) | more practice with recursion, pointers, malloc
 Class 2 | 2/25 | [Prep Work](./materials/class2-prep) | [In Class](./materials/class2) | hexadecimal, file io, structs
-Class 3 | 3/1 | Read through the <a href="https://drive.google.com/file/d/0B-IXJ6m5VmoqbVZ1cnpsZDEwMlE/view?usp=sharing" target="_blank">Soft Skills Pre-Work</a><br>Work on [Problem Set 4](./materials/problem-set) | [In Class](./materials/class3) | Soft Skills Presentation, office hours
+Class 3 | 3/1 | Read over the <a href="https://drive.google.com/file/d/0B-IXJ6m5VmoqbVZ1cnpsZDEwMlE/view?usp=sharing" target="_blank">Soft Skills Pre-Work</a><br>Work on [Problem Set 4](./materials/problem-set) | [In Class](./materials/class3) | Soft Skills Presentation, office hours
 
 
