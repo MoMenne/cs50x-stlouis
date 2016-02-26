@@ -1,10 +1,10 @@
 ##### Module 5
 
-[Back to Class 1 Prep](../class1-prep)
+[Back to Class 1 Prep](../../class1-prep#more-on-pointers-and-memory--some-tricky-gotchas)
 
 # Resource: Pass by Reference
 
-Recall from Module 4 that functions generally receive copies of whatever values you pass in. This is called "passing by value", and is the reason why the `swap` function failed to actually swap anything. To fix `swap`, we had to pass the two variables "by refrence" instead:
+Recall from Module 4 that functions generally receive copies of whatever values you pass in. This is called "passing by value", and is the reason why the `swap` function failed to actually swap anything. To fix `swap`, we had to pass the two variables "by reference" instead:
 
 ```c
 void swap(int* x, int* y);
