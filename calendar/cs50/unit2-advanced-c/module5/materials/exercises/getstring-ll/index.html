@@ -82,14 +82,10 @@
     // the link to the next node in the list
     struct node* next;
 }
-node;
-
-Since there is only one link to a node (called *next*) this is a **singly-linked list**. This detail is important since later we will need to add nodes to this list for each character that is given by the user.
-
-Now let's take a look at the `GetString()` function:
-
-```c
-//The head of our linked list
+node;</code></pre>
+<p>Since there is only one link to a node (called <em>next</em>) this is a <strong>singly-linked list</strong>. This detail is important since later we will need to add nodes to this list for each character that is given by the user.</p>
+<p>Now let's take a look at the <code>GetString()</code> function:</p>
+<pre><code class="language-c">//The head of our linked list
 node* head = NULL;
 
 string GetString(void)
@@ -135,7 +131,7 @@ string GetString(void)
         curr-&gt;next = newNode;
     }
 }</code></pre>
-<p>Here's where things get interesting. The first thing <code>append</code> does is create a new node that contains the given character. We then have to add this node to our list, but we have to be careful. If the list is empty then <code>head</code> will be NULL which could lead to an error if we aren't careful. To accommodate this we check to see if the list is empty (by comparing <code>head</code> to NULL) and setting <code>head</code> if necessary.</p>
+<p>Here's where things get interesting. The first thing <code>append</code> does is create a new node that contains the given character. We then have to add this node to our list, but we have to be careful. If the list is empty then <code>head</code> will be NULL which could lead to an error if we aren't careful. To accommodate this we check to see if the list is empty (by comparing <code>head</code> to NULL) and setting <code>head</code> to <code>newNode</code> if necessary.</p>
 <p>If the list is not empty, then we want to append this character to the end of the list. To do this, we first need to find the end of the list. Recall that each node has a pointer to the next node in the list. This means that the last node in the list will not have anything to point to, so it will point to NULL. Our loop progresses through the list looking for this null value, then appends the new node to the end of our list.</p>
 <p>Now let's return to GetString() and finish things up:</p>
 <pre><code class="language-c">// return NULL if user provided no input
