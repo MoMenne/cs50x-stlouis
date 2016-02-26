@@ -187,7 +187,7 @@ printf("The home team now has %i wins. The Spoons have %i wins.\n", homeTeam-&gt
     team* biggestRival;
 } team;</code></pre>
 <p>Hopefully that makes sense.</p>
-<p>There's actually one small complication. The compiler will not be able to handle the above code without some extra help on our part. The problem is that, because we are trying to use <code>team*</code> inside the definition of <code>team</code> itelf, the compiler says &quot;Hey I don't know what a team is yet. You cant use that type.&quot; So on recursively defined structs like this, we have to add a little bit of syntax to tell the compiler &quot;Trust me, there is going to be a type called team.&quot; We do this like so:</p>
+<p>There's actually one small complication. The compiler will not be able to handle the above code without some extra help on our part. The problem is that, because we are trying to use <code>team*</code> inside the definition of <code>team</code> itelf, the compiler says &quot;Hey I don't know what a team is yet. You can't use that type.&quot; So on recursively defined structs like this, we have to add a little bit of syntax to tell the compiler &quot;Trust me, there is going to be a type called team.&quot; We do this like so:</p>
 <pre><code class="language-c">typedef struct team // we add the word "team" to the end of this line
 {
     char* city;

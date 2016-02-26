@@ -107,6 +107,14 @@ Nice to meet you, bugs bunny!
 ==16520== For counts of detected and suppressed errors, rerun with: -v
 ==16520== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)</code></pre>
 <p>See if you can figure out where the leak is and fix it!</p>
+<p>A couple notes:</p>
+<ul>
+<li>Notice above how, when we run Valgrind, we still have to interact with our program and provide input when it prompts us for our first name and last name.</li>
+<li>
+<p>If you want more details on the problem, you can rerun valgrind with the <code>leak-check</code> flag set to <code>full</code>, like this:</p>
+<pre><code class="language-nohighlight">valgrind --leak-check=full ./leaky</code></pre>
+</li>
+</ul>
                 </section>
 
             </div>
