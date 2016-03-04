@@ -87,7 +87,7 @@ team forks = { "Shelbyville", "Forks", 11, 4 };</code></pre>
 <p>We can read to and write from the &quot;fields&quot; or &quot;members&quot; of an instance by using dot-notation:</p>
 <pre><code class="language-c">printf("In a shock upset, our beloved %s %s actually won!\n", spoons.city, spoons.name);
 spoons.wins = spoons.wins + 1;
-forks.losses += spoons.wins + 1;
+forks.losses = forks.losses + 1;
 printf("%s's record is now %i and %i\n", spoons.city, spoons.wins, spoons.losses);</code></pre>
 <h3 id="structs-of-structs">Structs of Structs</h3>
 <p>In the above example, our <code>team</code> struct is composed entirely of regular &quot;primitive&quot; data types: <code>int</code> and <code>char*</code>.</p>
