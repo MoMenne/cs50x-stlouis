@@ -8,7 +8,7 @@ For homework, you should have done [Prep for Class 1](../class1-prep)
 ### During Class
 Today's class will include a discussion about the differences beteween passing by reference vs. passing by value as well as the functionality and implementation of linked lists.
 
-1. Lecture / Q&A on the following topics
+1. Lecture / Q&A (<a href="https://www.youtube.com/watch?v=-GsImyHLNsk" target="_blank">Re-watch here!</a>) on the following topics
  * Passing by Reference
  * Linked Lists
 
