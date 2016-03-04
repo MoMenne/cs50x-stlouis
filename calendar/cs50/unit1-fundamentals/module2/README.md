@@ -26,4 +26,5 @@ Class 2 | 2/4 | [Prep Work](./materials/class2-prep) | [In Class](./materials/cl
 Class 3 | 2/9 | Complete <a href="https://docs.google.com/forms/d/1tpkXqZVOegq4elogdPHRs5YLS_rSAUyMkh-SzlGmQyU/viewform" target="_blank">Class Survey</a><br>Complete [Soft Skills Prep](./materials/soft-skills)<br>Work on [Problem Set 2](./materials/problem-set) | [In Class](./materials/class3) | (office hours!)|
 
 
+
   
