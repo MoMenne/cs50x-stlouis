@@ -9,7 +9,7 @@ Before coming to class, you should have completed [Class 2 Prep](../class2-prep)
 ### During Class
 This class will be focused on file i/o and structs, as well as some more practice with memory management and pointers.
 
-1. Lecture / Q&A on the following topics:
+1. Lecture / Q&A (<a href="https://www.youtube.com/watch?v=Eq7CZnavi38" target="_blank">Re-watch it here!</a>) on the following topics:
   * File i/o
   * structs
 
