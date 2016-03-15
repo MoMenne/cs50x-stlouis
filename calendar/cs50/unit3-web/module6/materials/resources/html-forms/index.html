@@ -154,7 +154,7 @@ Host: https://www.google.com</code></pre>
 </tr>
 </tbody>
 </table>
-<p>As an aside, what about the HTTP <code>method</code> (ours was <code>GET</code>) -- is that refleted in the URL? It is not. But although the query string does not display the method, it is affected by it. If your <code>method</code> is <code>POST</code> rather than <code>GET</code>, then the additional <code>Field</code>s like (<code>q=panda</code>) will not show up in the string. This is for security purposes in situations where you don't want sensitive information visible in the URL.</p>
+<p>As an aside, what about the HTTP <code>method</code> (ours was <code>GET</code>) -- is that reflceted in the URL? It is not. But although the query string does not display the method, it is affected by it. If your <code>method</code> is <code>POST</code> rather than <code>GET</code>, then the additional <code>Field</code>s like (<code>q=panda</code>) will not show up in the string. This is for security purposes in situations where you don't want sensitive information visible in the URL.</p>
 <h3 id="adding-more-fields">Adding More Fields</h3>
 <p>If we want to add additional fields to our request, we simply need to add more <code>&lt;input&gt;</code> elements to our form. </p>
 <p>For instance, let's say we wanted to do an <em>image</em> search. It turns out that the way to specify a google image search is to include another field in your request: the <code>"tbm"</code> field should have a value of <code>"isch"</code> (I have no idea what those keywords mean, I just know it works). We want our url to look like this <a href="https://www.google.com/search?q=pandas&tbm=isch">https://www.google.com/search?q=pandas&tbm=isch</a>. So we simply need to add another input:</p>
