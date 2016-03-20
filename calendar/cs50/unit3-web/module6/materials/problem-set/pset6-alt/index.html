@@ -137,7 +137,7 @@ curl: (3) [globbing] unmatched close brace/bracket in column 6</code></pre>
     "icon_emoji": ":smile:"
 }</code></pre>
 <p>which we will insert into our curl request like this:</p>
-<pre><code class="language-nohighlight">$ curl -X POST --data 'payload={"text": "Howdily doodily!", "username": "Ned Flanders", "icon_emoji": ":smile:"}' https://hooks.slack.com/services/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</code></pre>
+<pre><code class="language-nohighlight">$ curl -X POST --data 'payload={"text": "Howdily doodily!", "username": "Ned Flanders", "icon_emoji": ":smile:"}' https://hooks.slack.com/services/123456789</code></pre>
 <p>which should result in a slack post like this:</p>
 <img src="screenshots/curlresult2.png"/>
 <p>We were able to specify a username and &quot;avatar&quot; using the <code>"username"</code> and <code>"icon_emoji"</code> keys.</p>
