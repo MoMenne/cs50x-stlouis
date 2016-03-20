@@ -123,7 +123,7 @@
 <pre><code class="language-nohighlight">curl: (3) [globbing] unmatched brace in column 87
 curl: (3) [globbing] unmatched close brace/bracket in column 6</code></pre>
 <p>The problem is that there are certain characters, such as <code>{</code>, that you can't put directly inside a url. But <code>curl</code> gives us another avenue for attaching data to an HTTP request, the <code>--data</code> flag:</p>
-<pre><code class="language-nohighlight">$ curl -X POST --data 'payload={"text": "hello"}' https://hooks.slack.com/services/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</code></pre>
+<pre><code class="language-nohighlight">$ curl -X POST --data 'payload={"text": "hello"}' https://hooks.slack.com/services/123456789</code></pre>
 <p>Notice that we must wrap the <code>'payload={"text": "hello"}'</code> portion in <code>'</code>single quotes<code>'</code>.</p>
 <p>This command should receive a response of</p>
 <pre><code class="language-nohighlight">ok</code></pre>
