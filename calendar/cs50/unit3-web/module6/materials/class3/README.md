@@ -10,6 +10,8 @@ No prep work. Work away on [Problem Set 6](../problem-set).
 
 Office Hours: Continue working on [Problem Set 6](../problem-set). Instructors will be circulating to provide help.
 
+Also, if interested, there will be a <a href="http://www.stlofe.org/credit_and_money_management_workshop_20160402" target="_blank">Credit and Money Management Workshop</a> this Saturday (April 2nd) at the Mentor Center from 1:30 - 3:30pm. 
+
 ### Homework
 
 1. Finish Problem Set 6
