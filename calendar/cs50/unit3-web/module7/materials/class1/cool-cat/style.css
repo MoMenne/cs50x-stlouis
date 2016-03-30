@@ -1,0 +1,370 @@
+* {
+margin: 0 ;
+padding: 0 ;
+font-family: sans-serif;
+}
+
+
+.main {
+    width: 1366;
+    height: 738px;
+    
+    margin: auto;
+    
+    background:
+    no-repeat center url(http://testbeds.businesscatalyst.com/images/bgfinal.png);
+    
+}
+
+
+body {
+background-color: rebeccapurple;
+/*background: linear-gradient(rebeccapurple, purple);*/
+
+}
+
+.bx {
+    background-color: rgba(200, 200, 200, .2);
+}
+
+.type {
+
+    position: absolute;
+    left: 10%;
+    top: 60px;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1;
+    text-shadow: 3px 4px purple; 
+    
+}
+
+.type img {
+
+    margin: 10px;
+}
+
+
+.eblast input {
+    padding: 5px;
+}
+
+
+
+.eblast {
+
+    position: absolute;
+    left: 10%;
+    top: 715px;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1;
+    text-shadow: 3px 4px purple; 
+    
+}
+
+
+.eblast button {
+ padding: 5px;
+ background-color: aqua;
+
+}
+
+
+.header {
+  text-align: center;
+  font-family : sans-serif;
+  font-weight : bold;
+  font-size : 34px;
+  color : #32004B;
+  background : #FFFFFF;
+}
+
+.footer {
+    position: absolute;
+  bottom: 1%;
+  width: 100%;
+  height: 45px;
+  margin: auto;
+  text-align: center;
+  color : #32004B;
+  background : purple;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+line-height: 45px;
+
+}
+
+
+#clear {
+    width: 80px;
+    height: 30px;
+    position: fixed;
+    top: 745px;
+    right: 10%;
+    color: black;
+    border-width: medium;
+    border-color: red;
+    border-style: solid;
+    border-radius: 15px;
+}
+#clear button {
+    display: block;
+    width: 200px;
+    height: 35px;
+    font-size: 1em;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+#head {
+    width: 230px;
+    height: 190px;
+    position: fixed;
+    top: 250px;
+    left: 10%;
+    color: white;
+    padding: 15px;
+    border-width: medium;
+    border-color: white;
+    border-style: solid;
+    border-radius: 15px;
+}
+#head button {
+    display: block;
+    width: 200px;
+    height: 35px;
+    margin: 5px;
+    font-size: 1em;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+}
+
+#ears {
+    width: 230px;
+    height: 160px;
+    position: fixed;
+    top: 500px;
+    left: 10%;
+    color: white;
+    padding: 15px;
+    border-width: medium;
+    border-color: white;
+    border-style: solid;
+    border-radius: 15px;
+}
+#ears button {
+    display: block;
+    width: 200px;
+    height: 35px;
+    margin: 5px;
+    font-size: 1em;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+}
+
+#presets {
+    width: 230px;
+    height: 100px;
+    position: fixed;
+    top: 80px;
+    right: 10%;
+    color: white;
+    padding: 20px;
+    border-width: medium;
+    border-color: white;
+    border-style: solid;
+    border-radius: 15px;
+}
+#presets button {
+    border-radius: 150px;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    font-size: 1em;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+#mouth {
+    width: 230px;
+    height: 190px;
+    position: fixed;
+    top: 250px;
+    right: 10%;
+    color: white;
+    padding: 15px;
+    border-width: medium;
+    border-color: white;
+    border-style: solid;
+    border-radius: 15px;
+}
+#mouth button {
+    display: block;
+    width: 200px;
+    height: 35px;
+    margin: 5px;
+    font-size: 1em;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+}
+
+
+#eyes {
+    width: 230px;
+    height: 190px;
+    position: fixed;
+    top: 500px;
+    right: 10%;
+    color: white;
+    padding: 15px;
+    border-width: medium;
+    border-color: white;
+    border-style: solid;
+    border-radius: 15px;
+}
+#eyes button {
+    display: block;
+    width: 200px;
+    height: 35px;
+    margin: 5px;
+    font-size: 1em;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+#items {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    margin: 100px 0 0 -300px;
+}
+
+.cathead {
+    position: absolute;
+    left: 50px;
+}
+
+.tophat {
+    position: absolute;
+    top: 10px;
+    left: 180px;
+}
+
+.cowboy {
+    position: absolute;
+    top: -70px;
+    left: 110px;
+}
+.pirate {
+    position: absolute;
+    top: 20px;
+    left: 75px;
+}
+.kangol {
+    position: absolute;
+    top: 30px;
+    left: 160px;
+}
+
+
+
+
+
+.earring {
+    position: absolute;
+    top: 130px;
+    left: 505px;
+}
+.cross {
+    position: absolute;
+    top: 110px;
+    left: 480px;
+}
+.dblloop {
+    position: absolute;
+    top: 130px;
+    left: 25px;
+}
+
+
+
+
+.monocle {
+    position: absolute;
+    top: 280px;
+    left: 320px;
+}
+.shades {
+    position: absolute;
+    top: 300px;
+    left: 140px;
+}
+.glasses {
+    position: absolute;
+    top: 290px;
+    left: 155px;
+}
+.eyepatch {
+    position: absolute;
+    top: 260px;
+    left: 170px;
+}
+
+
+
+
+
+
+.mustache {
+    position: absolute;
+    top: 455px;
+    left: 245px;
+}
+.cig {
+    position: absolute;
+    top: 485px;
+    left: 315px;
+}
+.kerchief {
+    position: absolute;
+    top: 455px;
+    left: 135px;
+}
+.chain {
+    position: absolute;
+    top: 455px;
+    left: 145px;
+}
+
+
+#eyes button:hover,
+#mouth button:hover,
+#presets button:hover,
+#head button:hover,
+#ears button:hover,
+#clear button:hover {
+    background-color: cadetblue;
+}
+
+.ds {
+    display: none;
+}

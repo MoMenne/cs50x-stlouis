@@ -1,0 +1,81 @@
+#heading
+{   
+    background: linear-gradient(top, #5768E3 0%, #3c489e 100%);
+    background: -moz-linear-gradient(top, #5768E3 0%, #3c489e 100%);
+    background: -webkit-linear-gradient(top, #5768E3 0%, #3c489e 100%);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: "HelveticaNeue-CondensedBold";
+    border-radius: 3px;
+}
+
+#table
+{
+    background-color: white;
+    text-align: center;
+    font-family: "HelveticaNeue-CondensedBold";
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#result
+{
+    background: linear-gradient(top, #b3b3ff 0%, #8f8fcc 100%);
+    background: -moz-linear-gradient(top, #b3b3ff 0%, #8f8fcc 100%);
+    background: -webkit-linear-gradient(top, #b3b3ff 0%, #8f8fcc 100%);
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "HelveticaNeue-CondensedBold";
+}
+
+body
+{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h2
+{
+    color: #ffffff;
+}
+
+h3
+{
+    color: #d8d8d8;
+}
+h4
+{
+    font-weight: 100;
+}
+
+td
+{
+   line-height: 1; 
+    background: linear-gradient(top, #BA99EE 0%, #947abe 100%);
+    background: -moz-linear-gradient(top, #BA99EE 0%, #947abe 100%);
+    background: -webkit-linear-gradient(top, #BA99EE 0%, #947abe 100%);
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+
+a:link
+{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+a:visited
+{
+    color:#ffffff;
+}
+
+a:hover
+{
+    text-decoration: none;
+    color:#e0ffe0;
+}

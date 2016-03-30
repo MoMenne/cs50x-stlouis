@@ -1,0 +1,115 @@
+#top
+{
+    background: #9966ff url("http://www.sharegif.com/wp-content/uploads/2013/09/22/butterfly-gif-5.gif") 230px 0% no-repeat;
+    color:purple;
+    min-width: 1375px;
+    height: 180px;
+}
+
+.custom 
+{
+    position: absolute;
+    left: 245px;
+    top: 25px;
+    width: 500px;
+    height: 30px;
+    font: 54px MV Boli, arial;
+}
+         
+#topright {
+    position: absolute;
+    top: 0px;
+    left: 750px;
+    width: 625px;
+    height: 160px;
+    font: 21px arial;
+    color: black;
+}
+
+#bottom
+{
+    background: #ccff33;
+    background: linear-gradient(to right bottom, #9966ff, #ccff33);
+    height: 560px;
+    min-width: 1375px;
+}
+
+#bottom1
+{
+    background: #ccff33;
+    background: linear-gradient(to right bottom, #9966ff, #ccff33);
+    height: 560px;
+    min-width: 1375px;
+    font: 18px arial;
+}
+
+#pic1
+{
+    position: absolute;
+    top:250px;
+    left: 15px;
+    width: 260px;
+    height: 300px;
+    font: 16px arial;
+    color: black;
+}
+
+#pic2
+{
+    position: absolute;
+    top: 250px;
+    left: 290px;
+    width: 260px;
+    height: 500px;
+    font: 16px arial;
+    color: black;
+}
+
+#pic3
+{
+    position: absolute;
+    top: 250px;
+    left: 565px;
+    width: 260px;
+    height: 500px;
+    font: 16px arial;
+    color: black;
+}
+
+#pic4
+{
+    position: absolute;
+    top: 250px;
+    left: 840px;
+    width: 260px;
+    height: 500px;
+    font: 16px arial;
+    color: black;
+}
+
+#pic5
+{
+    position: absolute;
+    top: 250px;
+    left: 1115px;
+    width: 260px;
+    height: 500px;
+    font: 16px arial;
+    color: black;
+}
+
+#form
+{
+    position:absolute;
+    top: 680px;
+    left: 15px;
+}
+
+#foot
+{
+    position: absolute;
+    top: 680px;
+    width: 1400px;
+    font: 35px arial;
+    color: green;
+}
