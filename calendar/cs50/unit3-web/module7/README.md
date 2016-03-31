@@ -23,5 +23,5 @@ Class # | Date| Before Class | During Class | Topics / Skills
 :------:|:----:|:--------------:|:--------------:|----------------
 Class 1 | 3/31 | [Prep Work](./materials/class1-prep) | [In Class](./materials/class1) | PHP syntax, PHP on the Web, sessions & cookies
 Class 2 | 4/5 | [Prep Work](./materials/class2-prep) | [In Class](./materials/class2) | The MVC Paradigm, SQL
-Class 3 | 4/7 | Continue [Problem Set 7](./materials/problem-set) | [In Class](./materials/class3) | (office hours!)
+Class 3 | 4/7 | Continue [Problem Set 7](./materials/problem-set) | [In Class](./materials/class3) | Soft Skills: Tech Resumes, (office hours!)
 
