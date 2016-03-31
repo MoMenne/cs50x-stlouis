@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="contest.css" rel="stylesheet"/>
+        <title>Jeopardy</title>
+    </head>
+    
+    <body>
+        <div id=heading>
+            <h1>Welcome to CS50 Jeopardy!!</h1>
+            <p>
+            Here are the rules: You answer the questions below and depending on how many you get right you just might win!!
+            </p>
+        </div>
+        
+            
+        
+        <div id=table>
+            <table border="4" width=100% bordercolor= "#000000" bgcolor= "#ffffff">
+                <tr bgcolor= "#ffffff">
+                    <td><h2>C Programming</h2></td>
+                    <td><h2>HTML && CSS</h2></td>
+                    <td><h2>Guess that animal</h2></td>
+                </tr>
+              
+                <tr>
+                    <td> 
+                        <h3>Question One</h3>
+                        <p></p>
+                        <h4>What is 'b' in ascii?
+                            <form action="https://www.google.com/search?name=q" method="get">
+                                If you think you have the answer use Google to check yourself! <br/><input name="q" type="text"/>
+                                <input type="submit" value="Google"/>
+                            </form>
+                        </h4>    
+                    </td>
+                    
+                    <td>
+                        <h3>Question One</h3>
+                        <p></p>
+                        <h4>What is the first tag that you need to type into an html file?
+                            <form action="https://www.google.com/search?name=q" method="get">
+                                If you think you have the answer use Google to check yourself! <br/><input name="q" type="text"/>
+                                <input type="submit" value="Google"/>
+                            </form>
+                        </h4>    
+                    </td>
+                    
+                    <td>
+                        <h3>Question One</h3>
+                        <p></p>
+                        <h4>Can you guess what animal this is? <img width="200" alt="zoomedInImage" src="http://3.bp.blogspot.com/-H0USMQGzd8Y/UkhYqIxubtI/AAAAAAAARkE/f8ltF8pi_ZM/s1600/close-up-macro-photo-nose-white-cat-hd-cats-wallpapers.jpg"/>
+                            <form action= "https://www.youtube.com/watch?" method="get">
+                            click for answer: <select name="v" onChange="combo(this, 'theinput')" onMouseOut="comboInit(this, 'theinput')">
+                            <option> </option>
+                            <option>cat</option>
+                        </h4>    
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <h3>Question Two</h3>
+                        <p></p>
+                        <h4>What is argv an abreviation for?
+                            <br/>
+                            <form action="https://www.google.com/search?name=q" method="get">
+                                If you think you have the answer use Google to check yourself! <br/><input name="q" type="text"/>
+                                <input type="submit" value="Google"/>
+                            </form>
+                        </h4>
+                    </td>
+                    
+                    <td>
+                        <h3>Question Two</h3>
+                        <p></p>
+                        <h4>What does html stand for?
+                            <form action="https://www.google.com/search?name=q" method="get">
+                                If you think you have the answer use Google to check yourself! <br/><input name="q" type="text"/>
+                                <input type="submit" value="Google"/>
+                            </form>
+                        </h4>    
+                    </td>
+                    
+                    <td>
+                        <h3>Question Two</h3>
+                        <p></p>
+                        <h4>Can you guess what animal these are? <img width="200" alt="zoomedInImage" src="http://stream1.gifsoup.com/view6/2571876/kissy-chinchillas-o.gif"/>
+                            <form action= "https://www.youtube.com/watch?" method="get">
+                            <p></p>
+                            click for answer: <select name="v" onChange="combo(this, 'theinput')" onMouseOut="comboInit(this, 'theinput')">
+                            <option> </option>
+                            <option>Chinchillas</option>
+                        </h4>    
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <h3>Question Three</h3>
+                        <p></p>
+                        <h4>Define recursion:
+                            <br/>
+                            <form action="https://www.google.com/search?name=q" method="get">
+                                If you think you have the answer use Google to check yourself! <br/><input name="q" type="text"/>
+                                <input type="submit" value="Google"/>
+                            </form>
+                        </h4>    
+                    </td>
+                    
+                    <td>
+                        <h3>Question Three</h3>
+                        <p></p>
+                        <h4>What is a div tag?
+                            <br/>
+                            <form action="https://www.google.com/search?name=q" method="get">
+                                If you think you have the answer use Google to check yourself! <br/><input name="q" type="text"/>
+                                <input type="submit" value="Google"/>
+                            </form>
+                        </h4>
+                    </td>
+                        
+                    <td>
+                        <h3>Question Three</h3>
+                        <p></p>
+                        <h4>What are the four main animals in the DreamWorks movie Madagascar?
+                            <br/>
+                            Once you have your guess <a href="http://www.imdb.com/title/tt0351283/">click here</a>
+                        </h4>    
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="result">
+            You win the game if you got six or more of these questions correct!<br/>
+            If you won, <a href="https://www.youtube.com/watch?v=QEjgPh4SEmU">click here</a>, otherwise you're gonna have to <a href="https://www.youtube.com/watch?v=U0lS2mG0Wgk">click here</a> 
+        </div>    
+    </body>
