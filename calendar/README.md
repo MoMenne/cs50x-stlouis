@@ -1,3 +1,7 @@
+### Attention CS50x Students
+
+Registration is now open for **LaunchCode's CS60x**, a new class formed by LaunchCode in partnership with Harvard and MIT, aimed specifically at helping you gain the skills you need for a LaunchCode apprenticeship. While CS50 was always intended primarily for Harvard undergraduate students, CS60 has been designed from the ground up for the job seeker. Based on our analysis of the state of the industry, and our forecasts of the emerging trends both in St. Louis and nationally, we have identified Scratch as the language that is primed to dominate the landscape over the next ten years. In order to ensure candidates' competitiveness in this new marketplace, CS60x will be taught entirely in Scratch. Class begins in June. We anticipate a heavy volume of applicants. To ensure your place in the class, <a href="https://scratch.mit.edu/projects/103709816/" target="_blank">please register here</a>. 
+
 # Course Calendar
 
 ### Preseason
