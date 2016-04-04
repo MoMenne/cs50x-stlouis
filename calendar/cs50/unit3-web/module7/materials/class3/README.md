@@ -8,6 +8,7 @@ No Prep Work. Work away on [Problem Set 7](../problem-set).
 ### During Class
 
 1. Soft Skills Workshop: Tech Resumes (if you're interested in an apprenticeship / job in tech, you won't want to miss this!)
+<br>&nbsp; &nbsp; &nbsp; &nbsp; Here is a packet you can reference when thinking about your resume: <a href="https://docs.google.com/document/d/1jMa35HgJl0Y8LjL-UEIFp2qhfC-DxgrtlXAjQzYtzY8/edit" target="_blank">Resume Development Packet</a>
 2. Office Hours: Continue working on [Problem Set 7](../problem-set). Instructors will be circulating to provide help.
 
 ### Homework
